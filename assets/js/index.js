@@ -49,7 +49,7 @@ class Stud extends User {
     return this.arrOcenki;
   }
   srednBal() {
-    return this.arrOcenki.reduce((a, b) => a + b, 0);
+    return this.arrOcenki.reduce((a, b) => a + b, 0) / this.arrOcenki.length;
   }
 }
 
